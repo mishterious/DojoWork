@@ -1,0 +1,20 @@
+Git init
+Git add . 
+Git add __filename___
+Git status
+Git commit -m "___" (name the commit - describe the changes)
+
+
+
+Reviewing past changes:
+Git log (gives a log of all the chances in reverse chronological order)
+Git log -10 (gives log of the last 10 changes etc.)
+Git diff --stat ___hash____(gives a log of the changes since that version)
+
+
+Reverting:
+Git revert -n HEAD
+Git revert -n <commit hash> (if you don't put in a commit hash, it will automatically set it to HEAD>
+*Always revert backwards in order of last commits"
+Git reset <commit hash> --hard (when you need to completely erase the changes to a particular version)
+Git reset <commit hash> <filename> --hard (when you want to reset the changes to a particular file but not the whole project back to a particular version)
